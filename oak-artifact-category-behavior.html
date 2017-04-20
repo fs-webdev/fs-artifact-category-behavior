@@ -1,0 +1,15 @@
+<script>
+  window.ArtifactCategoryBehavior = {
+    _getArtifactType: function(artifact) {
+      if (!artifact) {
+        return null;
+      }
+
+      var artifactType = artifact.contentCategory;
+      if (artifact.category === 'AUDIO') {
+        artifactType = 'AUDIO';
+      }
+      return artifactType;
+    }
+  };
+</script>
